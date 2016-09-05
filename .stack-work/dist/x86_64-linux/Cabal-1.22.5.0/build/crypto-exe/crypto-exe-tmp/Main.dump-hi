@@ -1,0 +1,197 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-05 20:34:36.267101 UTC
+
+interface main@main:Main 7103
+  interface hash: 8cd0e6b6e5e83198ab6f1fdf2c814f3e
+  ABI hash: 265d2c5f0bbe9ce0e99994bcbda4d4bd
+  export-list hash: c7a89413dda0b583d87efff15286fd41
+  orphan hash: 515a141a8411da5e03e5d3587f948017
+  flag hash: 50879ce51080d6897a0f90bf2d1a50e7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      crypto-0.1.0.0@crypt_9HSOuTb2mfa3j5HpkxhfyV
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      fail-4.9.0.0@fail_2xB1AvdW34sDm9N3JOe33G ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+import  -/  base-4.8.2.0:GHC.IO.Encoding 5e85d51844b34853c227026908b762f7
+import  -/  base-4.8.2.0:GHC.IO.Handle 631f32e0ad65df940f6a2b3e721d8452
+import  -/  base-4.8.2.0:GHC.IO.Handle.FD 4b888b3713ea36bd21caa2badeaf319d
+import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
+import  -/  base-4.8.2.0:GHC.IO.IOMode 89fcaeb96929360e7be5a7bbb14ceec9
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence 84fa36a5edd40294d161a22530741f85
+import  -/  crypto-0.1.0.0@crypt_9HSOuTb2mfa3j5HpkxhfyV:Lib 225c912e619589b32525ed3005f1e018
+import  -/  crypto-0.1.0.0@crypt_9HSOuTb2mfa3j5HpkxhfyV:Serialize e386917bef75846ce61a848455a42ba9
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text 677c532e2dd56476a11a0a8a53880ce7
+cbf02927f82358da0d297bf0a4d159a8
+  $s$fSerialize(,) ::
+    Data.Serialize.Serialize (GHC.Types.Char, GHC.Types.Char)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, GHC.Types.Char)
+                  (Data.Serialize.$fSerialize(,)_$cput
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Data.Serialize.$fSerializeChar
+                     Data.Serialize.$fSerializeChar)
+                  (Data.Serialize.$fSerialize(,)_$cget
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Data.Serialize.$fSerializeChar
+                     Data.Serialize.$fSerializeChar) -}
+328415eb0f3d909ed188e11629962d65
+  $s$fSerializeMap ::
+    Data.Serialize.Serialize
+      (Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Map.Base.Map
+                       (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+                  (Data.Serialize.$fSerializeMap_$cput
+                     @ (GHC.Types.Char, GHC.Types.Char)
+                     @ GHC.Types.Int
+                     Lib.$s!_$s$fOrd(,)
+                     Main.$s$fSerializeMap1
+                     Data.Serialize.$fSerializeInt)
+                  (Data.Serialize.$fSerializeMap_$cget
+                     @ (GHC.Types.Char, GHC.Types.Char)
+                     @ GHC.Types.Int
+                     Lib.$s!_$s$fOrd(,)
+                     Main.$s$fSerializeMap1
+                     Data.Serialize.$fSerializeInt) -}
+7ced44b0f38dea05a45a471edc0da832
+  $s$fSerializeMap1 ::
+    Data.Serialize.Serialize (GHC.Types.Char, GHC.Types.Char)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Main.$s$fSerialize(,) -}
+18e2276e9afbd41f45dd71c4ca6d3d43
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+01e7b6ed6d2889bc2b53f7b11d03bf3e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Main.main5
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.hSetEncoding1
+                        ipv1
+                        GHC.IO.Encoding.UTF8.utf8_bom
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 Serialize.putToFile1
+                   @ (Data.Map.Base.Map
+                        (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+                   Main.$s$fSerializeMap
+                   Main.main4
+                   (case GHC.ST.runSTRep
+                           @ Data.Text.Internal.Text
+                           (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
+                            case GHC.Prim.newByteArray# @ s1 8 s2 of ds4 { (#,#) ipv6 ipv7 ->
+                            Main.main3
+                              @ s1
+                              (Data.Text.Array.MArray @ s1 ipv7)
+                              Main.main2
+                              ipv5
+                              '\NUL'
+                              '\NUL'
+                              0
+                              ipv6 }) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                    Lib.$wdigramsMap ww1 ww2 ww3 })
+                   ipv4 } } }) -}
+3417e68fd2b7140db8245a81d354390c
+  main2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4) -}
+ccb0813b63fb3ad1e7018c84cbb19057
+  main3 ::
+    Data.Text.Array.MArray s1
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Char#
+    -> GHC.Prim.Char#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# s1
+    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
+  {- Arity: 7, Strictness: <L,U(U)><L,U(U)><S,U><S,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+97142d7d310b89ca9ebf5ed923288da9
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "WarAndPeaseBigramsMap"#) -}
+d8e497698be3f7434cd32e349129bd00
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "book1.txt"#) -}
+5ba8e83f2230072f52bb49c98cf7215a
+  main6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+"SPEC/Main $fSerialize(,) @ Char @ Char" [ALWAYS] forall $dSerialize :: Data.Serialize.Serialize
+                                                                          GHC.Types.Char
+                                                         $dSerialize1 :: Data.Serialize.Serialize
+                                                                           GHC.Types.Char
+  Data.Serialize.$fSerialize(,) @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                $dSerialize
+                                $dSerialize1
+  = Main.$s$fSerialize(,)
+"SPEC/Main $fSerializeMap @ (Char, Char) @ Int" [ALWAYS] forall $dOrd :: GHC.Classes.Ord
+                                                                           (GHC.Types.Char,
+                                                                            GHC.Types.Char)
+                                                                $dSerialize :: Data.Serialize.Serialize
+                                                                                 (GHC.Types.Char,
+                                                                                  GHC.Types.Char)
+                                                                $dSerialize1 :: Data.Serialize.Serialize
+                                                                                  GHC.Types.Int
+  Data.Serialize.$fSerializeMap @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Int
+                                $dOrd
+                                $dSerialize
+                                $dSerialize1
+  = Main.$s$fSerializeMap
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

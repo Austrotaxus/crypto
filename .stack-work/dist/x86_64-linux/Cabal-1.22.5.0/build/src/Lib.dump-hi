@@ -1,0 +1,1789 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-05 20:31:34.347966 UTC
+
+interface crypt_9HSOuTb2mfa3j5HpkxhfyV:Lib 7103
+  interface hash: d75b6b1259987b7ecee19a6516d956e6
+  ABI hash: 225c912e619589b32525ed3005f1e018
+  export-list hash: 3bc3fd4ba81c2a3e673dcf0d1d8fcc73
+  orphan hash: f230ec5fd9173c2fcdd991b2dcc7fcfa
+  flag hash: fb774f094631a0f52dc85a4de5062e11
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.addDigram
+  Lib.decodeSymb
+  Lib.decodeText
+  Lib.digrams
+  Lib.digramsInitMap
+  Lib.digramsMap
+  Lib.estimate
+  Lib.frequencyDict
+  Lib.letters
+  Lib.myKey
+  Lib.order
+  Lib.taskPhrase
+  Lib.updateDict
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU*
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne*
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence 84fa36a5edd40294d161a22530741f85
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text 677c532e2dd56476a11a0a8a53880ce7
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Internal d9b6b9a9dd535595b612aea5738b7466
+44acde7de3ffb4fc675b480f9dc25fcf
+  $s!1 :: GHC.Types.Int -> Data.Map.Base.Map GHC.Types.Int a -> a
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   w :: GHC.Types.Int
+                   w1 :: Data.Map.Base.Map GHC.Types.Int a ->
+                 case w of ww { GHC.Types.I# ww1 -> Lib.$wpoly_go10 @ a ww1 w1 }) -}
+9ed574f6b649066be549a81d0e03a8d4
+  $s!3 :: GHC.Classes.Eq (GHC.Types.Char, GHC.Types.Char)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Lib.$s!_$s$fEq(,) -}
+94d79f3bd249194a70f5be7cc44bec11
+  $s!_$s$fEq(,) :: GHC.Classes.Eq (GHC.Types.Char, GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, GHC.Types.Char)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEqChar)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEqChar) -}
+0a53860efa127e44e1010a816dc4cd83
+  $s!_$s$fOrd(,) :: GHC.Classes.Ord (GHC.Types.Char, GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, GHC.Types.Char)
+                  Lib.$s!3
+                  (GHC.Classes.$fOrd(,)_$ccompare
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar)
+                  (GHC.Classes.$fOrd(,)_$c<
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar)
+                  (GHC.Classes.$fOrd(,)_$c<=
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar)
+                  (GHC.Classes.$fOrd(,)_$c>
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar)
+                  (GHC.Classes.$fOrd(,)_$c>=
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar)
+                  (GHC.Classes.$fOrd(,)_$cmax
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar)
+                  (GHC.Classes.$fOrd(,)_$cmin
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Lib.$s!3
+                     GHC.Classes.$fOrdChar
+                     GHC.Classes.$fOrdChar) -}
+debb134dbcce95a3b28fdd39ab40ee2a
+  $sfromList ::
+    [(GHC.Integer.Type.Integer, a)]
+    -> Data.Map.Base.Map GHC.Integer.Type.Integer a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a ds :: [(GHC.Integer.Type.Integer, a)] ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ GHC.Integer.Type.Integer
+                             @ a
+                             1
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a)
+                             (Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Integer.Type.geInteger# kx ky of wild4 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild4 of wild5 {
+                             GHC.Types.False
+                             -> case kx of dt { DEFAULT ->
+                                Lib.$wpoly_go1
+                                  @ a
+                                  1
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Integer.Type.Integer
+                                     @ a
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a)
+                                     (Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a))
+                                  wild2 }
+                             GHC.Types.True
+                             -> case kx of dt { DEFAULT ->
+                                Lib.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Integer.Type.Integer
+                                     @ a
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a)
+                                     (Data.Map.Base.Tip @ GHC.Integer.Type.Integer @ a))
+                                  wild2 } } } } } } }) -}
+5d5fce8cfb4c57976e22896fe90a0ce1
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Integer.Type.Integer a1
+    -> [(GHC.Integer.Type.Integer, a1)]
+    -> Data.Map.Base.Map GHC.Integer.Type.Integer a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+993b414b16b054cb0892137151a2d4d5
+  $sfromList2 ::
+    [((GHC.Types.Char, GHC.Types.Char), a)]
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a ds :: [((GHC.Types.Char, GHC.Types.Char), a)] ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { (,) ipv ipv1 ->
+                           Data.Map.Base.Bin
+                             @ (GHC.Types.Char, GHC.Types.Char)
+                             @ a
+                             1
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a)
+                             (Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of ww { (,) ww1 ww2 ->
+                           case ky of ww3 { (,) ww4 ww5 ->
+                           case ww1 of wild4 { GHC.Types.C# c1 ->
+                           case ww4 of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.eqChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.leChar# c1 c2) of wild7 {
+                                  GHC.Types.False
+                                  -> Lib.$sfromList3
+                                       @ a
+                                       (Data.Map.Base.Bin
+                                          @ (GHC.Types.Char, GHC.Types.Char)
+                                          @ a
+                                          1
+                                          ww
+                                          x
+                                          (Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a)
+                                          (Data.Map.Base.Tip
+                                             @ (GHC.Types.Char, GHC.Types.Char)
+                                             @ a))
+                                       wild2
+                                  GHC.Types.True
+                                  -> Lib.$wpoly_go2
+                                       @ a
+                                       1
+                                       (Data.Map.Base.Bin
+                                          @ (GHC.Types.Char, GHC.Types.Char)
+                                          @ a
+                                          1
+                                          ww
+                                          x
+                                          (Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a)
+                                          (Data.Map.Base.Tip
+                                             @ (GHC.Types.Char, GHC.Types.Char)
+                                             @ a))
+                                       wild2 }
+                             GHC.Types.True
+                             -> case ww2 of wild7 { GHC.Types.C# c4 ->
+                                case ww5 of wild8 { GHC.Types.C# c5 ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.geChar# c4 c5) of wild9 {
+                                  GHC.Types.False
+                                  -> Lib.$wpoly_go2
+                                       @ a
+                                       1
+                                       (Data.Map.Base.Bin
+                                          @ (GHC.Types.Char, GHC.Types.Char)
+                                          @ a
+                                          1
+                                          ww
+                                          x
+                                          (Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a)
+                                          (Data.Map.Base.Tip
+                                             @ (GHC.Types.Char, GHC.Types.Char)
+                                             @ a))
+                                       wild2
+                                  GHC.Types.True
+                                  -> Lib.$sfromList3
+                                       @ a
+                                       (Data.Map.Base.Bin
+                                          @ (GHC.Types.Char, GHC.Types.Char)
+                                          @ a
+                                          1
+                                          ww
+                                          x
+                                          (Data.Map.Base.Tip @ (GHC.Types.Char, GHC.Types.Char) @ a)
+                                          (Data.Map.Base.Tip
+                                             @ (GHC.Types.Char, GHC.Types.Char)
+                                             @ a))
+                                       wild2 } } } } } } } } } } } }) -}
+f69e9c42bffe287022df4842fe9e6a43
+  $sfromList3 ::
+    Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) a1
+    -> [((GHC.Types.Char, GHC.Types.Char), a1)]
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+67a69469dd6e9440f65cc619b708c7ac
+  $sinsert_$sgo10 ::
+    GHC.Integer.Type.Integer
+    -> a1
+    -> Data.Map.Base.Map GHC.Integer.Type.Integer a1
+    -> Data.Map.Base.Map GHC.Integer.Type.Integer a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+a1a13ecfec1fe9b979feab78b955ea50
+  $sinsert_go10 ::
+    GHC.Classes.Ord k1 =>
+    k1 -> a1 -> Data.Map.Base.Map k1 a1 -> Data.Map.Base.Map k1 a1
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U><L,U><S,1*U> -}
+3b612bb90c2f7dbfb222c6c9d34dc6f7
+  $smember3 ::
+    GHC.Types.Int
+    -> Data.Map.Base.Map GHC.Types.Int a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   w :: GHC.Types.Int
+                   w1 :: Data.Map.Base.Map GHC.Types.Int a ->
+                 case w of ww { GHC.Types.I# ww1 -> Lib.$wpoly_go4 @ a ww1 w1 }) -}
+b692c0974fd19fb2f7f2b6f40f648619
+  $waddDigram ::
+    Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+    -> GHC.Prim.Char#
+    -> GHC.Prim.Char#
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ w :: Data.Map.Base.Map
+                          (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+                   ww :: GHC.Prim.Char#
+                   ww1 :: GHC.Prim.Char# ->
+                 let {
+                   b :: GHC.Types.Char = GHC.Types.C# ww1
+                 } in
+                 let {
+                   a :: GHC.Types.Char = GHC.Types.C# ww
+                 } in
+                 case Lib.$wpoly_go3 @ GHC.Types.Int a b w of wild {
+                   GHC.Types.False -> w
+                   GHC.Types.True
+                   -> Lib.$sinsert_go10
+                        @ (GHC.Types.Char, GHC.Types.Char)
+                        @ GHC.Types.Int
+                        Lib.$s!_$s$fOrd(,)
+                        (a, b)
+                        (case Data.Map.Base.find
+                                @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Int
+                                Lib.$s!_$s$fOrd(,)
+                                (a, b)
+                                w of wild1 { GHC.Types.I# x ->
+                         GHC.Types.I# (GHC.Prim.+# x 1) })
+                        w }) -}
+a5e37cf7626d2ad651cf9371843d6c1d
+  $wdigramsMap ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+  {- Arity: 3, Strictness: <L,U><L,U><L,U>, Inline: [0] -}
+32e2189990ad7175322d5a6cae8a1adb
+  $westimate ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+    -> GHC.Prim.Int#
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>, Inline: [0] -}
+83e6889c1bbd1b3bcb5031950ab95285
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Integer.Type.Integer a
+    -> [(GHC.Integer.Type.Integer, a)]
+    -> Data.Map.Base.Map GHC.Integer.Type.Integer a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+2a67364c335a78f3a93e428828ffe3f2
+  $wpoly_go10 ::
+    GHC.Prim.Int# -> Data.Map.Base.Map GHC.Types.Int a -> a
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+3a0ecb884f812f6df9db3bdf17790e37
+  $wpoly_go2 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) a
+    -> [((GHC.Types.Char, GHC.Types.Char), a)]
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+45bd82f738de195c927288f2ad06e30e
+  $wpoly_go3 ::
+    GHC.Types.Char
+    -> GHC.Types.Char
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) a
+    -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(U)><L,U(U)><S,1*U>,
+     Inline: [0] -}
+6f061d2a5ce4961ecb93871753ad9f69
+  $wpoly_go4 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Int a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+c7f99f1322754dd59abf317c73378210
+  addDigram ::
+    Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+    -> (GHC.Types.Char, GHC.Types.Char)
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U><S(SS),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Data.Map.Base.Map
+                          (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+                   w1 :: (GHC.Types.Char, GHC.Types.Char) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.C# ww4 ->
+                 case ww2 of ww5 { GHC.Types.C# ww6 ->
+                 Lib.$waddDigram w ww4 ww6 } } }) -}
+fbc217c6af5c9c2f404eac0d10428b74
+  decodeSymb ::
+    Data.Map.Base.Map GHC.Types.Int GHC.Types.Char
+    -> GHC.Types.Int -> GHC.Types.Char
+  {- Arity: 2, Strictness: <S,U><S,U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ m :: Data.Map.Base.Map GHC.Types.Int GHC.Types.Char
+                   k :: GHC.Types.Int ->
+                 case Lib.$smember3 @ GHC.Types.Char k m of wild {
+                   GHC.Types.False -> Lib.decodeSymb1
+                   GHC.Types.True -> Lib.$s!1 @ GHC.Types.Char k m }) -}
+be71c966d471fbdf3caced5553a7dc3c
+  decodeSymb1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '?') -}
+8ac32a951f9524e2cb1183fc8da4d028
+  decodeText ::
+    Data.Map.Base.Map GHC.Types.Int GHC.Types.Char
+    -> [GHC.Types.Int] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ keyMap :: Data.Map.Base.Map GHC.Types.Int GHC.Types.Char
+                   seq :: [GHC.Types.Int] ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b1
+                      c :: GHC.Types.Char -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Int
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Char
+                         @ b1
+                         @ GHC.Types.Int
+                         c
+                         (\ x :: GHC.Types.Int -> Lib.decodeSymb keyMap x))
+                      n
+                      seq)) -}
+9c69f1f988256597cef3f59111d2f61d
+  digrams :: [(GHC.Types.Char, GHC.Types.Char)]
+  {- Unfolding: (Lib.digrams_go Lib.letters) -}
+68cff1aebe2257ea5b6d647337aa925b
+  digramsInitMap ::
+    Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+  {- Unfolding: (Lib.$sfromList2
+                   @ GHC.Types.Int
+                   Lib.digramsInitMap1) -}
+1f3dbb23ae6776a81c53a795ff2d14a3
+  digramsInitMap1 ::
+    [((GHC.Types.Char, GHC.Types.Char), GHC.Types.Int)]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   @ ((GHC.Types.Char, GHC.Types.Char), GHC.Types.Int)
+                   Lib.digramsInitMap2
+                   Lib.digrams) -}
+65713cad62d3d5d99b3b1d155ecaf330
+  digramsInitMap2 ::
+    (GHC.Types.Char, GHC.Types.Char)
+    -> ((GHC.Types.Char, GHC.Types.Char), GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ds :: (GHC.Types.Char, GHC.Types.Char) ->
+                 case ds of wild { (,) a b -> (wild, Lib.digramsInitMap3) }) -}
+3eb8738111bea5cf47653141d4c9c2e8
+  digramsInitMap3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+3edfb15227921cddcd05dcfaf4c59bd2
+  digramsMap ::
+    Data.Text.Internal.Text
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U(U,U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.Text.Internal.Text ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Lib.$wdigramsMap ww1 ww2 ww3 }) -}
+7b654f11144c5d8513d3c5d5b47b04e0
+  digrams_go ::
+    [GHC.Types.Char] -> [(GHC.Types.Char, GHC.Types.Char)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+bcc4199a76733cee6c7ebb62557b00a5
+  estimate ::
+    Data.Text.Internal.Text
+    -> Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int
+    -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U(U,U,U)><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Data.Text.Internal.Text
+                   w1 :: Data.Map.Base.Map
+                           (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 case Lib.$westimate ww1 ww2 ww3 w1 of ww4 { DEFAULT ->
+                 GHC.Types.I# ww4 } }) -}
+41d597ec1ba88414a09220c25ffe5464
+  frequencyDict ::
+    (GHC.Num.Num a, GHC.Classes.Ord t, GHC.Classes.Ord a,
+     Data.Foldable.Foldable t1) =>
+    t1 t -> Data.Sequence.Seq (t, a)
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A,A,A,A,A,C(U))><L,U(A,C(C1(U)),A,A,A,A,A,A)><L,U(A,C(C1(U)),A,A,A,A,A,A)><S(LLLLC(C(C(S)))LLLLLLLLLLL),1*U(A,A,A,A,1*C1(C1(C1(U))),A,A,A,A,A,A,A,A,A,A,A)><L,U>,
+     Unfolding: (\ @ t
+                   @ a
+                   @ (t1 :: * -> *)
+                   $dNum :: GHC.Num.Num a
+                   $dOrd :: GHC.Classes.Ord t
+                   $dOrd1 :: GHC.Classes.Ord a
+                   $dFoldable :: Data.Foldable.Foldable t1
+                   phrase :: t1 t ->
+                 Data.Sequence.sortBy
+                   @ (t, a)
+                   (Lib.order @ t @ t @ a $dOrd1)
+                   (Data.Sequence.fromList1
+                      @ (t, a)
+                      (Data.Map.Base.$fEqMap1
+                         @ t
+                         @ a
+                         (GHC.Types.[] @ (t, a))
+                         (Data.Foldable.foldl
+                            @ t1
+                            $dFoldable
+                            @ (Data.Map.Base.Map t a)
+                            @ t
+                            (Lib.updateDict @ t @ a $dNum $dOrd)
+                            (Data.Map.Base.Tip @ t @ a)
+                            phrase))
+                        `cast`
+                      ([Sym (Data.Sequence.NTCo:Elem[0] <(t, a)>_R)])_R)
+                     `cast`
+                   (Sym (Data.Sequence.NTCo:Seq[0] <(t, a)>_R))) -}
+3106d854d155680794c3efc569614d72
+  letters :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters59
+                   Lib.letters1) -}
+b38674a260e086406b5daf904a6c4fd5
+  letters1 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters58
+                   Lib.letters2) -}
+58d30f59921c48fb5f89541aaa3b93df
+  letters10 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters49
+                   Lib.letters11) -}
+59f3bc293253fce21e3df9bb180d0ed5
+  letters11 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters48
+                   Lib.letters12) -}
+e1b0e9d37c428f2fafac477ecebe7f81
+  letters12 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters47
+                   Lib.letters13) -}
+3bfc511fe5fc97e5a263871386add833
+  letters13 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters46
+                   Lib.letters14) -}
+6016b5c82b08cdf479bd3da5271ae76a
+  letters14 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters45
+                   Lib.letters15) -}
+29f9652e898a218e5427ca4d16e529bb
+  letters15 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters44
+                   Lib.letters16) -}
+c47ba23fc85efec733a644e7d87711ad
+  letters16 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters43
+                   Lib.letters17) -}
+317c426140cd75d7c6de5029bb9c3336
+  letters17 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters42
+                   Lib.letters18) -}
+17578e724aca0e40e7e970b9eae0acf2
+  letters18 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters41
+                   Lib.letters19) -}
+a9b6dd150a407af95f885fa3f715df35
+  letters19 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters40
+                   Lib.letters20) -}
+14a8f840f1aeb26bde59f468e2a463af
+  letters2 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters57
+                   Lib.letters3) -}
+850354541c9803f5d21364bc390e2aa1
+  letters20 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters39
+                   Lib.letters21) -}
+ee29e61ce1efae46449cdd6df3837f56
+  letters21 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters38
+                   Lib.letters22) -}
+0f30732675f3ab91240861d9aba722ef
+  letters22 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters37
+                   Lib.letters23) -}
+b99d0403bad9b57473dfc0ac95b215e7
+  letters23 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters36
+                   Lib.letters24) -}
+eb91bb0118bd3df33ac57d51120624be
+  letters24 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters35
+                   Lib.letters25) -}
+45b96855a21c61a5dd83514f3cec1929
+  letters25 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters34
+                   Lib.letters26) -}
+72a2b4491d901f00724fbcf81fbf42ba
+  letters26 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters33
+                   Lib.letters27) -}
+ff3d0f6368efa67baa19a02194b0bdde
+  letters27 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters32
+                   Lib.letters28) -}
+3da52632002f00127536e0d95ba21c00
+  letters28 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters31
+                   Lib.letters29) -}
+1a6d678ea731c2afe925228e876b6be1
+  letters29 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters30
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c6c0ed6eda95a34d01dc779c14ded2b0
+  letters3 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters56
+                   Lib.letters4) -}
+fcf5aadac9b49e6d02a27bd1b59b0be5
+  letters30 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ' ') -}
+ba1a1923f48f1d2abbf4eb61210a5ca2
+  letters31 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ',') -}
+9d5d6c0c8149961e6f057bcfee91335e
+  letters32 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1103') -}
+d681b61b8b58218fca024cb140236781
+  letters33 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1102') -}
+12a00319750882af5bf6ba4af0f13db6
+  letters34 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1101') -}
+3eaec3ff3a031106a8ed72bf740d57e5
+  letters35 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1097') -}
+7880dfe6c628d3bd34bd6973dd9aa425
+  letters36 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1095') -}
+e9376f406a0d0db9a88a40cbabeb8722
+  letters37 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1094') -}
+91043d3167a90e1bf2deeae887e1a1f0
+  letters38 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1093') -}
+88a3e27ee72bd4367995599809ad7ab5
+  letters39 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1092') -}
+c28899978391e4d109d1d544bdf8f0f1
+  letters4 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters55
+                   Lib.letters5) -}
+193a2db17d7fad6e6a7e0ac541b2217d
+  letters40 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1091') -}
+437872b0f829b2ec502ef8474d3cb791
+  letters41 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1090') -}
+2ff3828e9dbf3c9dbea781b9b01270dd
+  letters42 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1089') -}
+98b8a0a457dbbed8be94587937880c08
+  letters43 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1088') -}
+0f6c2cb69125ba425ca77e420c850bf6
+  letters44 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1087') -}
+e541e17b45eb88d4ec8e618e49c71aca
+  letters45 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1086') -}
+8b247fbc27fcff09d3fbdcc07b19b812
+  letters46 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1085') -}
+1bcd1191a70df013cdd41127a878b91a
+  letters47 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1084') -}
+06821e988f92b766a2b0f8b5aed7e85a
+  letters48 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1083') -}
+65667ba919be2fcfde9fb96ccbe0a179
+  letters49 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1082') -}
+871d377e5fd627d2e08019990768b775
+  letters5 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters54
+                   Lib.letters6) -}
+457b79dcd67574248bbbd8bd482a1bbb
+  letters50 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1081') -}
+ed48a3c54b7dccb065b3b663c79ba13e
+  letters51 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1080') -}
+c9eb1ea6e81a742699b083d76557087f
+  letters52 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1079') -}
+aa99298198a6370c70186fee4f55df74
+  letters53 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1078') -}
+46614ef6fcb312dea6be7248ccf121dd
+  letters54 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1077') -}
+80e928e2547b4befe79d28d3fa027f0a
+  letters55 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1076') -}
+2aafcd45ccea55d348b06f81c23df8d5
+  letters56 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1075') -}
+c5c785c91f9e8570de9c841daac88d22
+  letters57 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1074') -}
+9d43887b590c4fb2441b974b683a2f48
+  letters58 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1073') -}
+be6105d292469475f6cafccbb1b62afe
+  letters59 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.C# '\1072') -}
+ef2706b306499826cab30ec10dc0bffc
+  letters6 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters53
+                   Lib.letters7) -}
+3b9b3c063694567a3e10419d8a657421
+  letters7 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters52
+                   Lib.letters8) -}
+b8e20eaf869b08a43a07453fc9313bb4
+  letters8 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters51
+                   Lib.letters9) -}
+8ab8f53bc49c2abf9bb662747cb7a53c
+  letters9 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Lib.letters50
+                   Lib.letters10) -}
+bd827a72bc76b8fa5d77797704993bde
+  myKey :: Data.Map.Base.Map GHC.Integer.Type.Integer GHC.Types.Char
+  {- Unfolding: (Lib.$sfromList @ GHC.Types.Char Lib.myKey1) -}
+37d60425f1dec61694cf593910a17eb3
+  myKey1 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey121
+                   Lib.myKey2) -}
+ae429dc344fa1e6a978ad347d46d206e
+  myKey10 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey95
+                   Lib.myKey11) -}
+f415a95079687c201ebdf3f3947ba10c
+  myKey100 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 13) -}
+0706bb5236f31c86a900d8e7b83797f2
+  myKey101 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey103, Lib.myKey102)) -}
+9aaa9c62f22bb0f3728ac6e43f3ad904
+  myKey102 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1057') -}
+6351dfbba69d94936230d3e1e3435e64
+  myKey103 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 3) -}
+1c5fd3415b32e7e337dee02c334eb37b
+  myKey104 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.updateDict1, Lib.myKey105)) -}
+9e60f2b89e891a92aa7d2c0b37676403
+  myKey105 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1058') -}
+1118064ef9e2aac0d3fa23fff3ee0c37
+  myKey106 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey108, Lib.myKey107)) -}
+12c256b81cca86769cc450d52fefbb22
+  myKey107 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1053') -}
+36abb986b1085f3ddc6a9cba20da6ce8
+  myKey108 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 51) -}
+bb8a9b2e02d85c4f4d9f754cd8d2599c
+  myKey109 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey111, Lib.myKey110)) -}
+17743907b5291e60008adaf652c1d708
+  myKey11 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey92
+                   Lib.myKey12) -}
+69c785d3c95775774060a1393f8ebfaa
+  myKey110 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1048') -}
+10658b4396172349829040bc12849c67
+  myKey111 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 45) -}
+1a3691082994db632f45c136557ab0b4
+  myKey112 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey114, Lib.myKey113)) -}
+b2e11ee9cc5bf5e1de0d45ba77929437
+  myKey113 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1040') -}
+977bf0ad7544086bace96c13f09e5ee6
+  myKey114 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 34) -}
+464d98fe15d90c98de83f0b6e415b456
+  myKey115 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey117, Lib.myKey116)) -}
+8c602140c802a027c1e815d592a310ad
+  myKey116 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1045') -}
+3ef485ec45a3df953fe8385a56c4bfe4
+  myKey117 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 15) -}
+0677c8ca9a544b12bce21bb35d0ef625
+  myKey118 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey120, Lib.myKey119)) -}
+f86d2203424d95810eb127d9942291c1
+  myKey119 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1054') -}
+334fde4e93085ed4372224b989cbd9a3
+  myKey12 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey89
+                   Lib.myKey13) -}
+8931e8503711ae6227f4a6a46fff4f48
+  myKey120 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 31) -}
+5e058cf3da0fea79bf9728f63b977b49
+  myKey121 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey122, Lib.letters30)) -}
+c1b4c5feee5e3274f044902bd7b6fbec
+  myKey122 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 14) -}
+63a2858b17285e9fdc98a04123efa56a
+  myKey13 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey86
+                   Lib.myKey14) -}
+32b5f0aeee57a30e879f9401677fc603
+  myKey14 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey83
+                   Lib.myKey15) -}
+f1a8193e0a138efa680fa9b09727ac3f
+  myKey15 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey80
+                   Lib.myKey16) -}
+7ec6d9928b8227b1757d6473b2a4b900
+  myKey16 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey77
+                   Lib.myKey17) -}
+008acb476a972dfb22d3854874215e4b
+  myKey17 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey74
+                   Lib.myKey18) -}
+fdab862342848e3eda98699dc5814c5e
+  myKey18 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey71
+                   Lib.myKey19) -}
+705f1d848ec11722d450a35f6c0fff17
+  myKey19 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey68
+                   Lib.myKey20) -}
+fe4a7476892f546f2ffd4efd471611d2
+  myKey2 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey118
+                   Lib.myKey3) -}
+1660551da0645e7c4b6434e602aac1c2
+  myKey20 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey65
+                   Lib.myKey21) -}
+2071ebe2180e4516bc98baefba34af94
+  myKey21 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey62
+                   Lib.myKey22) -}
+37ed98088f7cecf95bc61aa796fc578f
+  myKey22 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey59
+                   Lib.myKey23) -}
+5c07923f550f9514d3a36c4f26fe72ff
+  myKey23 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey56
+                   Lib.myKey24) -}
+e39c99ea29d14833ff222bf74181fa0d
+  myKey24 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey53
+                   Lib.myKey25) -}
+6c75a129a87c3c063d367135b5d50fbf
+  myKey25 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey50
+                   Lib.myKey26) -}
+304db9667471fc99b1b69df550cb648b
+  myKey26 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey47
+                   Lib.myKey27) -}
+156bb645b20e0cf13bb13ade3a125e8e
+  myKey27 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey44
+                   Lib.myKey28) -}
+5fc7da7e5808e0baaa903f83df2d622c
+  myKey28 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey41
+                   Lib.myKey29) -}
+c972e1c0a635700382f8cab6907fef7d
+  myKey29 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey38
+                   Lib.myKey30) -}
+26144f280d5ecb91d4fcf74607d80de3
+  myKey3 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey115
+                   Lib.myKey4) -}
+4c4d2295f86c6ddd22f4cc2f4c2fa48a
+  myKey30 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey35
+                   Lib.myKey31) -}
+1cd2f34a08079ca9f64ed394bd276399
+  myKey31 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey32
+                   (GHC.Types.[] @ (GHC.Integer.Type.Integer, GHC.Types.Char))) -}
+129175de062376966fe36337c45774d8
+  myKey32 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey34, Lib.myKey33)) -}
+766eeaca09159069781cc80ef00dd24f
+  myKey33 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1060') -}
+29dada41261e215255a83d45f56e163e
+  myKey34 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 19) -}
+7948616de30f184abe8c4fb201b9d96d
+  myKey35 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey37, Lib.myKey36)) -}
+417b2234d0e721558d0290f8d734cc3b
+  myKey36 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1069') -}
+94942467d28dcb1d8e21911bce18e5f9
+  myKey37 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 18) -}
+e3077868385603e7db6f48dcc06b9731
+  myKey38 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey40, Lib.myKey39)) -}
+73ea5c9416c0e7e0536c40c78bf53e22
+  myKey39 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1062') -}
+4b0d2efe3f0b23380f366eeaaeee6a8b
+  myKey4 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey112
+                   Lib.myKey5) -}
+c3172beda47a605417c6a6313fc52b6b
+  myKey40 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 17) -}
+0d314353bf28fe6c83ee16f510443f9a
+  myKey41 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey43, Lib.myKey42)) -}
+8568ddf06b2a085f32a029356d8553ab
+  myKey42 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1070') -}
+c617099dc6896c70528f07629883c4af
+  myKey43 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 16) -}
+53e68e8fce3d196d7db7bc4ec49f90b9
+  myKey44 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey46, Lib.myKey45)) -}
+7c0b358b2d625f2900471c3219f71490
+  myKey45 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1064') -}
+4167d52ac3c118ef8b0e31a58d12768f
+  myKey46 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 11) -}
+4f05caa86107bfad85413d6b8388f92e
+  myKey47 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey49, Lib.myKey48)) -}
+4fb43c8c0b97fa5b0a0d604946e1de5f
+  myKey48 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1046') -}
+f80febac5b3545430f92d096f4f4b25f
+  myKey49 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 10) -}
+6523fae1052d9dd4b99ed41e7a226002
+  myKey5 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey109
+                   Lib.myKey6) -}
+e89f8a8f259f1413119ea5bffe442954
+  myKey50 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey52, Lib.myKey51)) -}
+0a63d815fc13de15cbd8d23a8be01c33
+  myKey51 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'X') -}
+21a3299e3cff71a75308ce9822992b3d
+  myKey52 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 9) -}
+6483edb28e3d52704c135c2921cb25e3
+  myKey53 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey55, Lib.myKey54)) -}
+5b20ac86eeb31b0ed0ebde9fdb9c0e4c
+  myKey54 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1049') -}
+df2a6d07abe81fa98c062ef28b99c222
+  myKey55 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 8) -}
+c1f2ff6c40ea2a2e740ba5779837fe3a
+  myKey56 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey58, Lib.myKey57)) -}
+0aeff218ac8eaf3750cd1f7bee029a32
+  myKey57 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1063') -}
+eecb7513b4698f2d947f2bddd155806f
+  myKey58 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 7) -}
+27e504dbd925f0c664b3102c3361d17b
+  myKey59 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey61, Lib.myKey60)) -}
+8e825dad3e6c0d88f00e1738caca5ca7
+  myKey6 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey106
+                   Lib.myKey7) -}
+85e689448e25651817b79c5d6cd34f14
+  myKey60 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1041') -}
+06910967b370125aeddc29a909a7f0fd
+  myKey61 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 6) -}
+dc62912baf48b35f9fb870f74912b311
+  myKey62 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey64, Lib.myKey63)) -}
+1ba89298c48a73904d2991e30cc768be
+  myKey63 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1047') -}
+3400e82c5ce8da07cdaf398651d25289
+  myKey64 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 4) -}
+401155c7a990944509ee226ec08c2d10
+  myKey65 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey67, Lib.myKey66)) -}
+634f75487b7dbcb93dd236e1fc202866
+  myKey66 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1043') -}
+cc9dc98356acf2c0a4f0118ea06f0b9e
+  myKey67 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 30) -}
+e04a703a4376254ef7b30039bdd0a322
+  myKey68 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey70, Lib.myKey69)) -}
+3f154491f43b5e7bc20680c4b0a14345
+  myKey69 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1068') -}
+fa2abf1fc884d8d2be9bec2b5d08bc97
+  myKey7 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey104
+                   Lib.myKey8) -}
+5ff199ff05d1f025e7adc3ca227b0653
+  myKey70 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 24) -}
+32cb2e4798e0627094b2f9d27b2c5f98
+  myKey71 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey73, Lib.myKey72)) -}
+689c799de3e328d3f7ad9345e3eab585
+  myKey72 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1067') -}
+629ce9cf484b9c5d7521b64894ecb17e
+  myKey73 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 21) -}
+6bccd27fbfe3880b15efc1e391855f81
+  myKey74 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey76, Lib.myKey75)) -}
+a0f4cf6c8466059f5da08f63e14c3414
+  myKey75 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1071') -}
+110842deec9dd4dc305334da0c37fb82
+  myKey76 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 12) -}
+da58c5fda1a66fef03cb20a3552ad2ae
+  myKey77 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey79, Lib.myKey78)) -}
+a1b0ff3c07cd44452aec956ee3dc32c2
+  myKey78 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1059') -}
+9d411fb44b6db578be5069a072895991
+  myKey79 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 5) -}
+dafad17a6f857cae33ab3eb0c7ca7677
+  myKey8 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey101
+                   Lib.myKey9) -}
+f415c0deb8bfb400e0756b5f5dfc499d
+  myKey80 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey82, Lib.myKey81)) -}
+0e7a057169e3f61e738313982a613a7e
+  myKey81 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1055') -}
+a483ac354c78775d6f2c88f8368e8369
+  myKey82 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 2) -}
+b73e45a340b4bc0e4598cc12661178a3
+  myKey83 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey85, Lib.myKey84)) -}
+d0e3a66337a650142186bd1fd9a36ee1
+  myKey84 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1044') -}
+c03ee1b4eded3040721374236bde64d7
+  myKey85 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 53) -}
+e08aa06072f62719d601d05eca2801b3
+  myKey86 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey88, Lib.myKey87)) -}
+9de15636088f72d201488e78dad563b0
+  myKey87 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1052') -}
+d1e62c5616e5e498fde4de0bf5ed2314
+  myKey88 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 50) -}
+46ede79612fe380a1fdf85eac20fa4bb
+  myKey89 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey91, Lib.myKey90)) -}
+e64cede98e71201610461fd70aa5308e
+  myKey9 :: [(GHC.Integer.Type.Integer, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Types.Char)
+                   Lib.myKey98
+                   Lib.myKey10) -}
+f547d574a560a55dd60c2836fb614696
+  myKey90 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1050') -}
+25acd5b3e76454266ef34628fe34b379
+  myKey91 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 41) -}
+759e98983900abfcfa6406fed53c176f
+  myKey92 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey94, Lib.myKey93)) -}
+f8288c213703eb5cebbb07fbe59fa952
+  myKey93 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1051') -}
+49ff83efd932d9286cfdb11f47d07f5c
+  myKey94 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 33) -}
+96b804e31137f70b121a8edd42938c92
+  myKey95 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey97, Lib.myKey96)) -}
+0fd4f768098696a7d821188668d0b32b
+  myKey96 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1042') -}
+eb4c7405ddf621812e3c4d77e55411dd
+  myKey97 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 23) -}
+274f61ac38f7a1b5644ec058ec56dbcf
+  myKey98 :: (GHC.Integer.Type.Integer, GHC.Types.Char)
+  {- HasNoCafRefs, Unfolding: ((Lib.myKey100, Lib.myKey99)) -}
+7be19e397b973b1adddca7a177524f63
+  myKey99 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '\1056') -}
+3f246d6cff69e934ea9a58397a955468
+  order ::
+    GHC.Classes.Ord a => (t, a) -> (t1, a) -> GHC.Types.Ordering
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><S,1*U(A,U)><S,1*U(A,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ t
+                   @ t1
+                   @ a
+                   $dOrd :: GHC.Classes.Ord a
+                   ds :: (t, a)
+                   ds1 :: (t1, a) ->
+                 case ds of wild { (,) a1 b1 ->
+                 case ds1 of wild1 { (,) a2 b2 ->
+                 GHC.Classes.compare @ a $dOrd b2 b1 } }) -}
+3e982dc3158ba0bf2786b791828b8a1f
+  taskPhrase :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey76
+                   Lib.taskPhrase1) -}
+bac236bb5cff1216dbf606bbfa8831df
+  taskPhrase1 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase2) -}
+86b8ca992f8dbc630e708f1757179c40
+  taskPhrase10 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey91
+                   Lib.taskPhrase11) -}
+abb835f164b08f65b278153c3399fd9d
+  taskPhrase11 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey120
+                   Lib.taskPhrase12) -}
+31427c6a91dc37835b3c18575107481e
+  taskPhrase12 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey94
+                   Lib.taskPhrase13) -}
+a9bee22bf3b024b08d89a9f163be8eab
+  taskPhrase13 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase14) -}
+3886b8db79e139d8e4c1c50eb2f83899
+  taskPhrase14 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey88
+                   Lib.taskPhrase15) -}
+3609c6cfd6ec8e97bdf2efc160f1397a
+  taskPhrase15 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey111
+                   Lib.taskPhrase16) -}
+8791f6af739fe9a19f38742cea180495
+  taskPhrase16 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey97
+                   Lib.taskPhrase17) -}
+4bcc28491102d3aa42353d73d322a847
+  taskPhrase17 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey120
+                   Lib.taskPhrase18) -}
+a97fbdd9c35c560ae12e386c90c6a75c
+  taskPhrase18 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey114
+                   Lib.taskPhrase19) -}
+0d6f893afa2cc67216d440c58a143339
+  taskPhrase19 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey91
+                   Lib.taskPhrase20) -}
+07315bd6ff21d6e391363511dfc096b0
+  taskPhrase2 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey97
+                   Lib.taskPhrase3) -}
+9c23085458f52cba9b5e013bb512be6a
+  taskPhrase20 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase21) -}
+ed220030e34f19ad29051f8b69df62f8
+  taskPhrase21 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey103
+                   Lib.taskPhrase22) -}
+e60893ecbcc2d58ef5d15d5bf8c110ff
+  taskPhrase22 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase23) -}
+4f0d68abd909e37e65c9d78f72b98550
+  taskPhrase23 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey88
+                   Lib.taskPhrase24) -}
+7166fb02d7255b28023efdc63bac17df
+  taskPhrase24 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey108
+                   Lib.taskPhrase25) -}
+2281f5f02bbd0b6b7b2ffcf110071449
+  taskPhrase25 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey114
+                   Lib.taskPhrase26) -}
+392010045270c3526e39ea77ada2fc7d
+  taskPhrase26 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey70
+                   Lib.taskPhrase27) -}
+ff73c030f9c888ab317ee7f56c8e842a
+  taskPhrase27 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.updateDict1
+                   Lib.taskPhrase28) -}
+4898846802a871178dd6ea544c07a283
+  taskPhrase28 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey100
+                   Lib.taskPhrase29) -}
+d3ef822f86a75f2636a1ed19ebd5f051
+  taskPhrase29 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey117
+                   Lib.taskPhrase30) -}
+d06c6646f9a170e12472eb3af392a711
+  taskPhrase3 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase4) -}
+359e526e97af92731101c13e2311ec2f
+  taskPhrase30 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey94
+                   Lib.taskPhrase31) -}
+1fbe9677ff18bb7f0634bcbe65a40544
+  taskPhrase31 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey108
+                   Lib.taskPhrase32) -}
+712c42e4b1fff3901ac4452280d54271
+  taskPhrase32 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey108
+                   Lib.taskPhrase33) -}
+6b8106d5c86baf9b644d9be791abf0e0
+  taskPhrase33 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey120
+                   Lib.taskPhrase34) -}
+e63b4f8f3b257942cfbcb7eb4a4bb60f
+  taskPhrase34 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.updateDict1
+                   Lib.taskPhrase35) -}
+9ea12c0c23453812a2fb5bf0442a0e53
+  taskPhrase35 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey67
+                   Lib.taskPhrase36) -}
+fa3f541e41dc20a52838a53cbe77717a
+  taskPhrase36 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey73
+                   Lib.taskPhrase37) -}
+599d98e953aa4c4f17c5d19546cfab51
+  taskPhrase37 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase38) -}
+f2db9f2ec34a7fbd9da27b5b5b3df3db
+  taskPhrase38 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey100
+                   Lib.taskPhrase39) -}
+6e6f84d1d70c90274748f7025c8dac3e
+  taskPhrase39 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey111
+                   Lib.taskPhrase40) -}
+991817df1c8cc566c451e1e7b5869925
+  taskPhrase4 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey103
+                   Lib.taskPhrase5) -}
+ff4888795374706743ddc49a152d7d84
+  taskPhrase40 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey117
+                   Lib.taskPhrase41) -}
+d22707c7c95f07416323f54b28082e6c
+  taskPhrase41 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey85
+                   Lib.taskPhrase42) -}
+3873eb651c72a797929d5634c234c28a
+  taskPhrase42 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey120
+                   Lib.taskPhrase43) -}
+2e00b745dc9837be4e494dea7b57479f
+  taskPhrase43 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey79
+                   Lib.taskPhrase44) -}
+72ca4b6b4e1370f52707743a434752b3
+  taskPhrase44 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey114
+                   Lib.taskPhrase45) -}
+0b656b8063090af7674ebf1549af7239
+  taskPhrase45 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey111
+                   Lib.taskPhrase46) -}
+a4fb01f2e58773ff90b99a4fa62db4b3
+  taskPhrase46 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey117
+                   Lib.taskPhrase47) -}
+2a0535ccf3065515e171570239721257
+  taskPhrase47 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey114
+                   Lib.taskPhrase48) -}
+fbebf003378138508c8d5c53c67d4946
+  taskPhrase48 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey85
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+68f213a2c62a927575425af83dbfa64e
+  taskPhrase5 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey117
+                   Lib.taskPhrase6) -}
+0053d4e1922c1befa08380726cf37f7e
+  taskPhrase6 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey82
+                   Lib.taskPhrase7) -}
+1c7e1bbbd2889ee15bfe9419b42c95dd
+  taskPhrase7 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey111
+                   Lib.taskPhrase8) -}
+d559457ea482a54160e90bdf9d65f607
+  taskPhrase8 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey122
+                   Lib.taskPhrase9) -}
+24f90124cd524ed92405639df3abf7ff
+  taskPhrase9 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.myKey120
+                   Lib.taskPhrase10) -}
+400ddb566f281bb98baca8c31f89be93
+  updateDict ::
+    (GHC.Num.Num a, GHC.Classes.Ord k) =>
+    Data.Map.Base.Map k a -> k -> Data.Map.Base.Map k a
+  {- Arity: 4,
+     Strictness: <L,U(1*C1(C1(U)),A,A,A,A,A,1*C1(U))><L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ k
+                   @ a
+                   $dNum :: GHC.Num.Num a
+                   $dOrd :: GHC.Classes.Ord k
+                   m :: Data.Map.Base.Map k a
+                   key :: k ->
+                 case Data.Map.Base.member @ k @ a $dOrd key m of wild {
+                   GHC.Types.False
+                   -> Data.Map.Base.insert
+                        @ k
+                        @ a
+                        $dOrd
+                        key
+                        (GHC.Num.fromInteger @ a $dNum Lib.updateDict1)
+                        m
+                   GHC.Types.True
+                   -> Data.Map.Base.insert
+                        @ k
+                        @ a
+                        $dOrd
+                        key
+                        (GHC.Num.+
+                           @ a
+                           $dNum
+                           (Data.Map.Base.find @ k @ a $dOrd key m)
+                           (GHC.Num.fromInteger @ a $dNum Lib.updateDict1))
+                        m }) -}
+785590d9d88dd4a529e0131a3f682a20
+  updateDict1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+"SPEC/Lib $fEq(,) @ Char @ Char" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                           GHC.Types.Char
+                                                 $dEq1 :: GHC.Classes.Eq GHC.Types.Char
+  GHC.Classes.$fEq(,) @ GHC.Types.Char @ GHC.Types.Char $dEq $dEq1
+  = Lib.$s!_$s$fEq(,)
+"SPEC/Lib $fOrd(,) @ Char @ Char" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                            (GHC.Types.Char, GHC.Types.Char)
+                                                  $dOrd :: GHC.Classes.Ord GHC.Types.Char
+                                                  $dOrd1 :: GHC.Classes.Ord GHC.Types.Char
+  GHC.Classes.$fOrd(,) @ GHC.Types.Char
+                       @ GHC.Types.Char
+                       $dEq
+                       $dOrd
+                       $dOrd1
+  = Lib.$s!_$s$fOrd(,)
+"SPEC/Lib fromList @ (Char, Char) _" [ALWAYS] forall @ a
+                                                     $dOrd :: GHC.Classes.Ord
+                                                                (GHC.Types.Char, GHC.Types.Char)
+  Data.Map.Base.fromList @ (GHC.Types.Char, GHC.Types.Char) @ a $dOrd
+  = Lib.$sfromList2 @ a
+"SPEC/Lib fromList @ Integer _" [ALWAYS] forall @ a
+                                                $dOrd :: GHC.Classes.Ord GHC.Integer.Type.Integer
+  Data.Map.Base.fromList @ GHC.Integer.Type.Integer @ a $dOrd
+  = Lib.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
