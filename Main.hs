@@ -7,7 +7,6 @@ import System.IO
 import Lib
 import Serialize  
 
-
 main = do
   handle <- openFile "book1.txt" ReadMode
   hSetEncoding handle utf8_bom
@@ -17,7 +16,7 @@ main = do
           putChar b
           putChar '-'
           putStrLn (show c))
-    (M.toList $ digramsMap $ toUpper $ pack contents)
+    (M.toList $ digramsMap $ toLower $ pack contents)
 
 
 

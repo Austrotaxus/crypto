@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2016-09-05 20:34:35.47865 UTC
+2016-09-05 21:57:52.132324 UTC
 
 interface crypt_9HSOuTb2mfa3j5HpkxhfyV:Serialize 7103
-  interface hash: 5411927e2d6abbaafc8d128a1e24a5dd
-  ABI hash: e386917bef75846ce61a848455a42ba9
-  export-list hash: dc3853e313e0ec25fa52bfb8b0d206b6
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  interface hash: 3adeac6f85459f6e2f0ddf0ea3ff0582
+  ABI hash: 3132480d87291193cad543e43c80364d
+  export-list hash: c1473819220483068723b2b4b82ccf43
+  orphan hash: 2171d0dadd36c3428eab5454a113b464
   flag hash: 962af636f8e927040c7daa9c21457292
   sig of: Nothing
   used TH splices: False
@@ -14,16 +14,22 @@ interface crypt_9HSOuTb2mfa3j5HpkxhfyV:Serialize 7103
 exports:
   Serialize.getFromFile
   Serialize.putToFile
-module dependencies:
+  Serialize.readTolstoiDigramsMap
+  Serialize.writeTolstoiDigramsMap
+module dependencies: Lib
 package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
-                      base-4.8.2.0 bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      base-4.8.2.0 binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
                       cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8
                       containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
                       deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
                       fail-4.9.0.0@fail_2xB1AvdW34sDm9N3JOe33G ghc-prim-0.4.0.0
-                      integer-gmp-1.0.0.0
+                      integer-gmp-1.0.0.0 text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
 orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
          bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
 family instance modules: base-4.8.2.0:Control.Applicative
                          base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
                          base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
@@ -34,14 +40,68 @@ family instance modules: base-4.8.2.0:Control.Applicative
                          containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
                          containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
                          containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
 import  -/  base-4.8.2.0:Data.Either e8724afd65fd432cfe9a54014f5f762d
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO.Encoding 5e85d51844b34853c227026908b762f7
+import  -/  base-4.8.2.0:GHC.IO.Handle 631f32e0ad65df940f6a2b3e721d8452
+import  -/  base-4.8.2.0:GHC.IO.Handle.FD 4b888b3713ea36bd21caa2badeaf319d
+import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
+import  -/  base-4.8.2.0:GHC.IO.IOMode 89fcaeb96929360e7be5a7bbb14ceec9
 import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
 import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString a7dd1816d7b9a73f13bb7af0c321dca4
 import  -/  cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8:Data.Serialize 9bf3a8072a0f07bd2924ddbfc9d00617
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
+import  -/  Lib 225c912e619589b32525ed3005f1e018
+  exports: 3bc3fd4ba81c2a3e673dcf0d1d8fcc73
+  digramsMap 3edfb15227921cddcd05dcfaf4c59bd2
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-da951419665889346370cfa8b08dadd1
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text 677c532e2dd56476a11a0a8a53880ce7
+cc5c97bd639cfc4549ee3d6d716b2905
+  $s$fSerialize(,) ::
+    Data.Serialize.Serialize (GHC.Types.Char, GHC.Types.Char)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, GHC.Types.Char)
+                  (Data.Serialize.$fSerialize(,)_$cput
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Data.Serialize.$fSerializeChar
+                     Data.Serialize.$fSerializeChar)
+                  (Data.Serialize.$fSerialize(,)_$cget
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     Data.Serialize.$fSerializeChar
+                     Data.Serialize.$fSerializeChar) -}
+d4fd6df476f7fd62df4b2574ac7034af
+  $s$fSerializeMap ::
+    Data.Serialize.Serialize
+      (Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Map.Base.Map
+                       (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+                  (Data.Serialize.$fSerializeMap_$cput
+                     @ (GHC.Types.Char, GHC.Types.Char)
+                     @ GHC.Types.Int
+                     Lib.$s!_$s$fOrd(,)
+                     Serialize.$s$fSerializeMap1
+                     Data.Serialize.$fSerializeInt)
+                  (Data.Serialize.$fSerializeMap_$cget
+                     @ (GHC.Types.Char, GHC.Types.Char)
+                     @ GHC.Types.Int
+                     Lib.$s!_$s$fOrd(,)
+                     Serialize.$s$fSerializeMap1
+                     Data.Serialize.$fSerializeInt) -}
+9ed87e15a80284eda4e2064adf68e7b9
+  $s$fSerializeMap1 ::
+    Data.Serialize.Serialize (GHC.Types.Char, GHC.Types.Char)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Serialize.$s$fSerialize(,) -}
+24c96b1af8b7e8fdcbfaf15597a4ec23
   getFromFile ::
     Data.Serialize.Serialize a => GHC.Base.String -> GHC.Types.IO a
   {- Arity: 3,
@@ -49,11 +109,11 @@ da951419665889346370cfa8b08dadd1
      Unfolding: InlineRule (0, True, True)
                 Serialize.getFromFile1
                   `cast`
-                (forall a.
-                 <Data.Serialize.Serialize a>_R
+                (forall a2.
+                 <Data.Serialize.Serialize a2>_R
                  ->_R <GHC.Base.String>_R
-                 ->_R Sym (GHC.Types.NTCo:IO[0] <a>_R)) -}
-b3ef956902d15fccc88f0b673531edcd
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <a2>_R)) -}
+3a891dc99a5fc468a3fc2d598f9ac327
   getFromFile1 ::
     Data.Serialize.Serialize a =>
     GHC.Base.String
@@ -61,8 +121,8 @@ b3ef956902d15fccc88f0b673531edcd
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
   {- Arity: 3,
      Strictness: <L,1*U(A,1*C1(C1(C1(C1(C1(U))))))><L,U><L,U>,
-     Unfolding: (\ @ a
-                   $dSerialize :: Data.Serialize.Serialize a
+     Unfolding: (\ @ a2
+                   $dSerialize :: Data.Serialize.Serialize a2
                    filePath :: GHC.Base.String
                    eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  case Control.Exception.Base.bracket1
@@ -85,13 +145,13 @@ b3ef956902d15fccc88f0b673531edcd
                  (# ipv,
                     case Data.Either.rights1
                            @ GHC.Base.String
-                           @ a
+                           @ a2
                            (GHC.Types.:
-                              @ (Data.Either.Either GHC.Base.String a)
-                              (Data.Serialize.decode @ a $dSerialize ipv1)
-                              (GHC.Types.[] @ (Data.Either.Either GHC.Base.String a))) of wild {
-                      [] -> GHC.List.badHead @ a : x ds2 -> x } #) }) -}
-1447dca1d5c82d40ba7faded9b2b578c
+                              @ (Data.Either.Either GHC.Base.String a2)
+                              (Data.Serialize.decode @ a2 $dSerialize ipv1)
+                              (GHC.Types.[] @ (Data.Either.Either GHC.Base.String a2))) of wild {
+                      [] -> GHC.List.badHead @ a2 : x ds2 -> x } #) }) -}
+7993b4860e9780b0bd3eff81871e0ef3
   putToFile ::
     Data.Serialize.Serialize a =>
     GHC.Base.String -> a -> GHC.Types.IO ()
@@ -99,12 +159,12 @@ b3ef956902d15fccc88f0b673531edcd
      Unfolding: InlineRule (0, True, True)
                 Serialize.putToFile1
                   `cast`
-                (forall a.
-                 <Data.Serialize.Serialize a>_R
+                (forall a2.
+                 <Data.Serialize.Serialize a2>_R
                  ->_R <GHC.Base.String>_R
-                 ->_R <a>_R
+                 ->_R <a2>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-27d9fdbc63a98f55d51e55746cdfc59b
+3da81ca4c70affa0471ddafe95055350
   putToFile1 ::
     Data.Serialize.Serialize a =>
     GHC.Base.String
@@ -112,10 +172,10 @@ b3ef956902d15fccc88f0b673531edcd
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 4, Strictness: <L,1*U(1*C1(U(A,U)),A)><L,U><L,U><L,U>,
-     Unfolding: (\ @ a
-                   $dSerialize :: Data.Serialize.Serialize a
+     Unfolding: (\ @ a2
+                   $dSerialize :: Data.Serialize.Serialize a2
                    fileName :: GHC.Base.String
-                   d :: a
+                   d :: a2
                    eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  Control.Exception.Base.bracket1
                    @ GHC.IO.Handle.Types.Handle
@@ -132,7 +192,7 @@ b3ef956902d15fccc88f0b673531edcd
                       eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                     case Data.ByteString.Lazy.toStrict
                            (Data.ByteString.Builder.toLazyByteString
-                              (case (Data.Serialize.put @ a $dSerialize d)
+                              (case (Data.Serialize.put @ a2 $dSerialize d)
                                       `cast`
                                     (Data.Serialize.Put.NTCo:PutM[0] <()>_N) of wild { Data.Serialize.Put.PairS ds1 b ->
                                b })) of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
@@ -141,6 +201,148 @@ b3ef956902d15fccc88f0b673531edcd
                    (<GHC.IO.Handle.Types.Handle>_R
                     ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
                    eta) -}
+e322cf8086ef8a8123bcdb7f3cd7964f
+  readTolstoiDigramsMap ::
+    GHC.Types.IO
+      (Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Serialize.readTolstoiDigramsMap1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0]
+                          <Data.Map.Base.Map
+                             (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int>_R)) -}
+41a918b3985d307693e91a6fdb5985b1
+  readTolstoiDigramsMap1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int #)
+  {- Arity: 1,
+     Unfolding: (Serialize.getFromFile1
+                   @ (Data.Map.Base.Map
+                        (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
+                   Serialize.$s$fSerializeMap
+                   Serialize.readTolstoiDigramsMap2) -}
+e7dc1995f0766441201fd702cbf4e4f4
+  readTolstoiDigramsMap2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "WarAndPeaseDigMap"#) -}
+7c17f022bc555754765da97944c871ca
+  writeTolstoiDigramsMap :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Serialize.writeTolstoiDigramsMap1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+65eaf30b47f9bf3f427cd3a7224a55db
+  writeTolstoiDigramsMap1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Serialize.writeTolstoiDigramsMap5
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.hSetEncoding1
+                        ipv1
+                        GHC.IO.Encoding.UTF8.utf8_bom
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 Control.Exception.Base.bracket1
+                   @ GHC.IO.Handle.Types.Handle
+                   @ ()
+                   @ ()
+                   Serialize.writeTolstoiDigramsMap4
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0] <GHC.IO.Handle.Types.Handle>_R))
+                   GHC.IO.Handle.hClose1
+                     `cast`
+                   (<GHC.IO.Handle.Types.Handle>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                   (\ h :: GHC.IO.Handle.Types.Handle[OneShot]
+                      eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    case Data.ByteString.Lazy.toStrict
+                           (Data.ByteString.Builder.toLazyByteString
+                              (case Data.Serialize.$w$cput11
+                                      @ (GHC.Types.Char, GHC.Types.Char)
+                                      @ GHC.Types.Int
+                                      Serialize.$s$fSerialize(,)
+                                      Data.Serialize.$fSerializeInt
+                                      (case GHC.ST.runSTRep
+                                              @ Data.Text.Internal.Text
+                                              (\ @ s1 s2 :: GHC.Prim.State# s1[OneShot] ->
+                                               case GHC.Prim.newByteArray#
+                                                      @ s1
+                                                      8
+                                                      s2 of ds4 { (#,#) ipv6 ipv7 ->
+                                               Serialize.writeTolstoiDigramsMap3
+                                                 @ s1
+                                                 (Data.Text.Array.MArray @ s1 ipv7)
+                                                 Serialize.writeTolstoiDigramsMap2
+                                                 ipv5
+                                                 '\NUL'
+                                                 '\NUL'
+                                                 0
+                                                 ipv6 }) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                                       Lib.$wdigramsMap ww1 ww2 ww3 }) of ww { (#,#) ww1 ww2 ->
+                               ww2 })) of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                    Data.ByteString.$wa h ww1 ww2 ww3 ww4 eta1 })
+                     `cast`
+                   (<GHC.IO.Handle.Types.Handle>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                   ipv4 } } }) -}
+4ff386b9433a5708585f0e12f9ebb011
+  writeTolstoiDigramsMap2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4) -}
+7df21ab9434855cea5ca007b8d091138
+  writeTolstoiDigramsMap3 ::
+    Data.Text.Array.MArray s1
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Char#
+    -> GHC.Prim.Char#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# s1
+    -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
+  {- Arity: 7, Strictness: <L,U(U)><L,U(U)><S,U><S,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+712e0df8824fe67ebfe982ae3a21c233
+  writeTolstoiDigramsMap4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.IO.Handle.Types.Handle #)
+  {- Arity: 1,
+     Unfolding: (GHC.IO.Handle.FD.openBinaryFile1
+                   Serialize.readTolstoiDigramsMap2
+                   GHC.IO.IOMode.WriteMode) -}
+c4b04c0875d1b23a0cdb1c257a4ffa8c
+  writeTolstoiDigramsMap5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "book1.txt"#) -}
+"SPEC/Serialize $fSerialize(,) @ Char @ Char" [ALWAYS] forall $dSerialize :: Data.Serialize.Serialize
+                                                                               GHC.Types.Char
+                                                              $dSerialize1 :: Data.Serialize.Serialize
+                                                                                GHC.Types.Char
+  Data.Serialize.$fSerialize(,) @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                $dSerialize
+                                $dSerialize1
+  = Serialize.$s$fSerialize(,)
+"SPEC/Serialize $fSerializeMap @ (Char, Char) @ Int" [ALWAYS] forall $dOrd :: GHC.Classes.Ord
+                                                                                (GHC.Types.Char,
+                                                                                 GHC.Types.Char)
+                                                                     $dSerialize :: Data.Serialize.Serialize
+                                                                                      (GHC.Types.Char,
+                                                                                       GHC.Types.Char)
+                                                                     $dSerialize1 :: Data.Serialize.Serialize
+                                                                                       GHC.Types.Int
+  Data.Serialize.$fSerializeMap @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Int
+                                $dOrd
+                                $dSerialize
+                                $dSerialize1
+  = Serialize.$s$fSerializeMap
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
