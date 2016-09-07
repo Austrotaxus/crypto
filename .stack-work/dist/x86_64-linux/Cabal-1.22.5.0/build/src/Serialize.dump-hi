@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2016-09-05 21:57:52.132324 UTC
+2016-09-07 21:29:19.821008 UTC
 
-interface crypt_9HSOuTb2mfa3j5HpkxhfyV:Serialize 7103
-  interface hash: 3adeac6f85459f6e2f0ddf0ea3ff0582
-  ABI hash: 3132480d87291193cad543e43c80364d
-  export-list hash: c1473819220483068723b2b4b82ccf43
-  orphan hash: 2171d0dadd36c3428eab5454a113b464
+interface crypt_5z9bD1thpSP2iQRx0C99pn:Serialize 7103
+  interface hash: 6e4b9c096c5c1d0e6bbae1abaf8906b9
+  ABI hash: 1511699598d3893b3f728fc4761173cc
+  export-list hash: f0185fca1e60a76acdb3d0e13691ca80
+  orphan hash: 7ab7e111eeec6379c39be3b09eb734ce
   flag hash: 962af636f8e927040c7daa9c21457292
   sig of: Nothing
   used TH splices: False
@@ -55,12 +55,12 @@ import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString a7d
 import  -/  cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8:Data.Serialize 9bf3a8072a0f07bd2924ddbfc9d00617
 import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
 import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
-import  -/  Lib 225c912e619589b32525ed3005f1e018
-  exports: 3bc3fd4ba81c2a3e673dcf0d1d8fcc73
-  digramsMap 3edfb15227921cddcd05dcfaf4c59bd2
+import  -/  Lib c3abd645672482dfa877bea0db33b221
+  exports: 49a5bff9e641818099c4edb91e6cdf6d
+  digramsMap 8209aae46951dedf6d3e376e031b741c
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text 677c532e2dd56476a11a0a8a53880ce7
-cc5c97bd639cfc4549ee3d6d716b2905
+dace83f72573ed34b2f8dc5992125935
   $s$fSerialize(,) ::
     Data.Serialize.Serialize (GHC.Types.Char, GHC.Types.Char)
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -76,7 +76,7 @@ cc5c97bd639cfc4549ee3d6d716b2905
                      @ GHC.Types.Char
                      Data.Serialize.$fSerializeChar
                      Data.Serialize.$fSerializeChar) -}
-d4fd6df476f7fd62df4b2574ac7034af
+85e4a34794e7f36ac17a303d53f855dc
   $s$fSerializeMap ::
     Data.Serialize.Serialize
       (Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
@@ -96,12 +96,12 @@ d4fd6df476f7fd62df4b2574ac7034af
                      Lib.$s!_$s$fOrd(,)
                      Serialize.$s$fSerializeMap1
                      Data.Serialize.$fSerializeInt) -}
-9ed87e15a80284eda4e2064adf68e7b9
+7378e5bd2fa423dff6c8c2bcb60f3910
   $s$fSerializeMap1 ::
     Data.Serialize.Serialize (GHC.Types.Char, GHC.Types.Char)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True) Serialize.$s$fSerialize(,) -}
-24c96b1af8b7e8fdcbfaf15597a4ec23
+b2f9d144539193db91f7f49ca94f3438
   getFromFile ::
     Data.Serialize.Serialize a => GHC.Base.String -> GHC.Types.IO a
   {- Arity: 3,
@@ -113,7 +113,7 @@ d4fd6df476f7fd62df4b2574ac7034af
                  <Data.Serialize.Serialize a2>_R
                  ->_R <GHC.Base.String>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <a2>_R)) -}
-3a891dc99a5fc468a3fc2d598f9ac327
+f1eecbcdccbc9bc40ff96717be09d828
   getFromFile1 ::
     Data.Serialize.Serialize a =>
     GHC.Base.String
@@ -151,7 +151,7 @@ d4fd6df476f7fd62df4b2574ac7034af
                               (Data.Serialize.decode @ a2 $dSerialize ipv1)
                               (GHC.Types.[] @ (Data.Either.Either GHC.Base.String a2))) of wild {
                       [] -> GHC.List.badHead @ a2 : x ds2 -> x } #) }) -}
-7993b4860e9780b0bd3eff81871e0ef3
+b74b78628ff6e9ce17ae436a23326630
   putToFile ::
     Data.Serialize.Serialize a =>
     GHC.Base.String -> a -> GHC.Types.IO ()
@@ -164,7 +164,7 @@ d4fd6df476f7fd62df4b2574ac7034af
                  ->_R <GHC.Base.String>_R
                  ->_R <a2>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-3da81ca4c70affa0471ddafe95055350
+f245c7745e6dbe6ffcfda4bf656041c3
   putToFile1 ::
     Data.Serialize.Serialize a =>
     GHC.Base.String
@@ -201,7 +201,7 @@ d4fd6df476f7fd62df4b2574ac7034af
                    (<GHC.IO.Handle.Types.Handle>_R
                     ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
                    eta) -}
-e322cf8086ef8a8123bcdb7f3cd7964f
+0e3bf2adc88141f9ae07925b5892d50c
   readTolstoiDigramsMap ::
     GHC.Types.IO
       (Data.Map.Base.Map (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
@@ -212,7 +212,7 @@ e322cf8086ef8a8123bcdb7f3cd7964f
                 (Sym (GHC.Types.NTCo:IO[0]
                           <Data.Map.Base.Map
                              (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int>_R)) -}
-41a918b3985d307693e91a6fdb5985b1
+94a73752453ed9dd5557d66cf1105c17
   readTolstoiDigramsMap1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -223,17 +223,17 @@ e322cf8086ef8a8123bcdb7f3cd7964f
                         (GHC.Types.Char, GHC.Types.Char) GHC.Types.Int)
                    Serialize.$s$fSerializeMap
                    Serialize.readTolstoiDigramsMap2) -}
-e7dc1995f0766441201fd702cbf4e4f4
+1768bf9545899f105bd1fbd725e75965
   readTolstoiDigramsMap2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "WarAndPeaseDigMap"#) -}
-7c17f022bc555754765da97944c871ca
+8051335ece18dda17f6d5974fb94c9d7
   writeTolstoiDigramsMap :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Serialize.writeTolstoiDigramsMap1
                   `cast`
                 (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-65eaf30b47f9bf3f427cd3a7224a55db
+e002a9dcea33bcbeca3c141f452de57e
   writeTolstoiDigramsMap1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -293,10 +293,10 @@ e7dc1995f0766441201fd702cbf4e4f4
                    (<GHC.IO.Handle.Types.Handle>_R
                     ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
                    ipv4 } } }) -}
-4ff386b9433a5708585f0e12f9ebb011
+2e160daf966aeb10b6c983d06827dafc
   writeTolstoiDigramsMap2 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4) -}
-7df21ab9434855cea5ca007b8d091138
+9ada42a296014cec2e327bdc79bb0ada
   writeTolstoiDigramsMap3 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -308,7 +308,7 @@ e7dc1995f0766441201fd702cbf4e4f4
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 7, Strictness: <L,U(U)><L,U(U)><S,U><S,U><L,U><L,U><L,U>,
      Inline: [0] -}
-712e0df8824fe67ebfe982ae3a21c233
+78c9c6f94a421c7b3d1ad32c04797d45
   writeTolstoiDigramsMap4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -317,7 +317,7 @@ e7dc1995f0766441201fd702cbf4e4f4
      Unfolding: (GHC.IO.Handle.FD.openBinaryFile1
                    Serialize.readTolstoiDigramsMap2
                    GHC.IO.IOMode.WriteMode) -}
-c4b04c0875d1b23a0cdb1c257a4ffa8c
+1522a92e7a1f39837828e03f2387553f
   writeTolstoiDigramsMap5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "book1.txt"#) -}
 "SPEC/Serialize $fSerialize(,) @ Char @ Char" [ALWAYS] forall $dSerialize :: Data.Serialize.Serialize

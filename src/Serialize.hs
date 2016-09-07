@@ -27,3 +27,4 @@ readTolstoiDigramsMap :: IO( Map (Char,Char) Int)
 readTolstoiDigramsMap = do 
   getFromFile "WarAndPeaseDigMap"
 
+

@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/austrotaxus/crypto/.stack-work/install/x86_64-linux/lts-6.10/7.10.3/bin"
-libdir     = "/home/austrotaxus/crypto/.stack-work/install/x86_64-linux/lts-6.10/7.10.3/lib/x86_64-linux-ghc-7.10.3/crypto-0.1.0.0-9HSOuTb2mfa3j5HpkxhfyV"
+libdir     = "/home/austrotaxus/crypto/.stack-work/install/x86_64-linux/lts-6.10/7.10.3/lib/x86_64-linux-ghc-7.10.3/crypto-0.1.0.0-5z9bD1thpSP2iQRx0C99pn"
 datadir    = "/home/austrotaxus/crypto/.stack-work/install/x86_64-linux/lts-6.10/7.10.3/share/x86_64-linux-ghc-7.10.3/crypto-0.1.0.0"
 libexecdir = "/home/austrotaxus/crypto/.stack-work/install/x86_64-linux/lts-6.10/7.10.3/libexec"
 sysconfdir = "/home/austrotaxus/crypto/.stack-work/install/x86_64-linux/lts-6.10/7.10.3/etc"
